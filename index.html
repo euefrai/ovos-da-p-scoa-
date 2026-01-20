@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Ovos de Páscoa Artesanais 🐰🍫</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Fonte -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <h1>🐰 Ovos de Páscoa Artesanais</h1>
+        <p>Feitos com carinho, sob encomenda 🍫</p>
+
+        <a href="carrinho.html" class="btn-carrinho">
+            🛒 Carrinho (<span id="contador-carrinho">0</span>)
+        </a>
+
+    </header>
+
+    <!-- PRODUTOS -->
+    <main class="produtos">
+        
+        <!-- Produto 1 -->
+        <div class="card-produto">
+            <img src="imagens/confete.jpg" alt="Ovo de Páscoa Confete">
+            <h3>Ovo de Páscoa Confete 🌈</h3>
+            <p>Chocolate ao leite com confetes coloridos.</p>
+            <span class="preco">R$ 35,00</span>
+
+            <button class="btn-adicionar"
+                data-id="1"
+                data-nome="Ovo de Páscoa Confete"
+                data-preco="35">
+                Adicionar ao carrinho
+            </button>
+        </div>
+
+        <!-- Produto 2 -->
+        <div class="card-produto">
+            <img src="imagens/oreo.jpg" alt="Ovo de Páscoa Oreo">
+            <h3>Ovo de Páscoa Oreo 🍪</h3>
+            <p>Chocolate com recheio cremoso e Oreo.</p>
+            <span class="preco">R$ 50,00</span>
+
+            <button class="btn-adicionar"
+                data-id="2"
+                data-nome="Ovo de Páscoa Oreo"
+                data-preco="50">
+                Adicionar ao carrinho
+            </button>
+        </div>
+
+        <!-- Produto 3 -->
+        <div class="card-produto">
+            <img src="imagens/morango.jpg" alt="Ovo de Páscoa Morango">
+            <h3>Ovo de Páscoa Morango 🍓</h3>
+            <p>Chocolate com morangos frescos.</p>
+            <span class="preco">R$ 45,00</span>
+
+            <button class="btn-adicionar"
+                data-id="3"
+                data-nome="Ovo de Páscoa Morango"
+                data-preco="45">
+                Adicionar ao carrinho
+            </button>
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>© Páscoa Artesanal - Encomendas via WhatsApp 🐰</p>
+    </footer>
+
+    <!-- JS (vamos usar depois) -->
+    <script src="js/carrinho.js"></script>
+
+</body>
+</html>

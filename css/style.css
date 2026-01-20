@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #faf7f2;
+    color: #333;
+}
+
+/* HEADER */
+.header {
+    text-align: center;
+    padding: 30px 20px;
+    background-color: #5a2d0c;
+    color: #fff;
+}
+
+.header h1 {
+    font-size: 2rem;
+}
+
+.header p {
+    margin-top: 8px;
+    font-weight: 300;
+}
+
+.btn-carrinho {
+    display: inline-block;
+    margin-top: 15px;
+    background-color: #fff;
+    color: #5a2d0c;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* PRODUTOS */
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    padding: 30px;
+}
+
+.card-produto {
+    background: #fff;
+    border-radius: 15px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.card-produto img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.card-produto h3 {
+    margin: 12px 0 5px;
+}
+
+.card-produto p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.preco {
+    display: block;
+    margin: 10px 0;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #5a2d0c;
+}
+
+.btn-adicionar {
+    background-color: #5a2d0c;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.95rem;
+}
+
+.btn-adicionar:hover {
+    opacity: 0.9;
+}
+
+/* FOOTER */
+.footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.85rem;
+    color: #777;
+}
+
+.quantidade {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.quantidade button {
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 50%;
+    background: #5a2d0c;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn-remover {
+    background: #c0392b;
+    color: #fff;
+    border: none;
+    padding: 8px;
+    width: 100%;
+    border-radius: 15px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+input, textarea {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-family: inherit;
+}
+
+/* =========================
+   MOBILE FIRST
+========================= */
+
+/* HEADER */
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.header h1 {
+    font-size: 1.5rem;
+}
+
+.btn-carrinho {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+}
+
+/* PRODUTOS MOBILE */
+.produtos {
+    padding: 15px;
+    gap: 20px;
+}
+
+.card-produto {
+    padding: 15px;
+}
+
+/* IMAGENS */
+.card-produto img {
+    max-height: 220px;
+    object-fit: cover;
+}
+
+/* BOTÕES */
+.btn-adicionar,
+.btn-remover {
+    font-size: 1rem;
+    padding: 12px;
+}
+
+/* QUANTIDADE */
+.quantidade button {
+    width: 36px;
+    height: 36px;
+    font-size: 1.1rem;
+}
+
+.quantidade span {
+    font-size: 1.1rem;
+    min-width: 30px;
+    text-align: center;
+}
+
+/* FORMULÁRIO */
+input, textarea {
+    font-size: 1rem;
+    padding: 12px;
+}
+
+textarea {
+    resize: none;
+    height: 80px;
+}
+
+/* TOTAL */
+#total {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #5a2d0c;
+}
+
+/* =========================
+   TELAS MAIORES (DESKTOP)
+========================= */
+@media (min-width: 768px) {
+    .header h1 {
+        font-size: 2rem;
+    }
+
+    .produtos {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        padding: 30px;
+    }
+
+    .card-produto img {
+        max-height: 260px;
+    }
+}

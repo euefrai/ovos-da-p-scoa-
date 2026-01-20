@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Seu Carrinho 🛒</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="header">
+    <h1>🛒 Seu Carrinho</h1>
+    <a href="index.html" class="btn-carrinho">← Voltar</a>
+</header>
+
+<main class="produtos" id="lista-carrinho">
+    <!-- itens do carrinho vão aparecer aqui -->
+</main>
+
+<section class="produtos">
+    <div class="card-produto">
+        <h3>Total do Pedido</h3>
+        <p id="total">R$ 0,00</p>
+    </div>
+</section>
+
+<section class="produtos">
+    <div class="card-produto">
+        <h3>Finalizar Pedido</h3>
+
+        <input type="text" id="nome" placeholder="Seu nome" style="width:100%; margin-bottom:10px;">
+        <input type="text" id="endereco" placeholder="Endereço" style="width:100%; margin-bottom:10px;">
+        <textarea id="observacoes" placeholder="Observações" style="width:100%;"></textarea>
+
+        <button 
+            type="button"
+            class="btn-adicionar"
+            onclick="finalizarPedido()">
+            Finalizar no WhatsApp 📲
+        </button>
+
+    </div>
+</section>
+
+<script src="js/carrinho-pagina.js"></script>
+</body>
+</html>
